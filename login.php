@@ -28,6 +28,7 @@
 					$password_error = "Password peab olema vähemalt 8 tähemärki pikk";
 					
 			}
+		}
 	}
 
 ?>
