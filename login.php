@@ -19,6 +19,14 @@
 		// kontrollin, et parool ei ole tühi
 		if (empty($_POST["password"]) ) {
 			$password_error = "See väli on kohustuslik";
+			} else {
+				
+				// kui oleme siia jõudnud, siis parool ei ole tühi enam
+				// kontrollin, et oleks vähemalt 8 sümbolit pikk
+				if(strlen($_POST["password"]) < 8) {
+					
+					$password_error = "Password peab olema vähemalt 8 tähemärki pikk";
+					
 			}
 	}
 
